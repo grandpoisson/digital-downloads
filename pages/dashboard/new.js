@@ -129,8 +129,8 @@ export default function NewProduct() {
                 className='hidden'
                 onChange={(event) => {
                   if (event.target.files && event.target.files[0]) {
-                    if (event.target.files[0].size > 20480000) {
-                      alert('Maximum size allowed is 20MB')
+                    if (event.target.files[0].size > 30720000) {
+                      alert('Maximum size allowed is 30MB')
                       return false
                     }
                     setProduct(event.target.files[0])
